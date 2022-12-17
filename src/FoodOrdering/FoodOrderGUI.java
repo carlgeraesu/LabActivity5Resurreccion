@@ -62,25 +62,25 @@ public class FoodOrderGUI extends JFrame {
 
                     int z = 0;
 
-                    if(rb5.isSelected() == true){
+                    if(rb5.isSelected() == true && y > 0){
                         res *= 0.95;
                         z++;
                         JOptionPane.showMessageDialog(btnOrder,"The total price is Php " + String.format("%.2f", res));
-                    } else if (rb10.isSelected() == true) {
+                    } else if (rb10.isSelected() == true && y > 0) {
                         res *= 0.90;
                         z++;
                         JOptionPane.showMessageDialog(btnOrder, "The total price is Php " + String.format("%.2f",res));
-                    } else if (rb15.isSelected() == true) {
+                    } else if (rb15.isSelected() == true && y > 0) {
                         res *= 0.85;
                         z++;
                         JOptionPane.showMessageDialog(btnOrder, "The total price is Php " + String.format("%.2f",res));
-                    } else if (rbNone.isSelected() == true) {
+                    } else if (rbNone.isSelected() == true && y > 0) {
                         z++;
                         JOptionPane.showMessageDialog(btnOrder, "The total price is Php " + String.format("%.2f",res));
                     }
 
                 if(y == 0 && z == 1){
-                    throw (new Nochoices("Please pick an order/discount."));
+                    throw (new Nochoices("Please pick an order."));
                 } else if(y > 0 && z == 0){
                     throw (new Nochoices("Please pick a discount."));
                 } else if (y == 0 && z == 0) {
