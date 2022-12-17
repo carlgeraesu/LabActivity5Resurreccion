@@ -11,4 +11,8 @@ public class SimpleCalcGUI extends JFrame{
     private JComboBox cbOperations;
     private JButton btnCompute;
     private JTextField lblResult;
+
+    public static void main(String[] args) {
+
+    }
 }
