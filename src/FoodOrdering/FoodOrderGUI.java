@@ -74,7 +74,7 @@ public class FoodOrderGUI extends JFrame {
                         res *= 0.85;
                         z++;
                         JOptionPane.showMessageDialog(btnOrder, "The total price is Php " + String.format("%.2f",res));
-                    } else if (rbNone.isSelected() == true) {
+                    } else if (rbNone.isSelected() == true ) {
                         z++;
                         JOptionPane.showMessageDialog(btnOrder, "The total price is Php " + String.format("%.2f",res));
                     }
