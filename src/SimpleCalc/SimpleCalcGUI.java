@@ -20,7 +20,7 @@ public class SimpleCalcGUI extends JFrame{
 
             @Override
             public void actionPerformed(ActionEvent e) {
-
+            try{
                     int n1 = Integer.parseInt(tfNumber1.getText());
                     int n2 = Integer.parseInt(tfNumber2.getText());
                     int res;
@@ -38,6 +38,10 @@ public class SimpleCalcGUI extends JFrame{
                         res = n1 / n2;
                         lblResult.setText(String.valueOf(res));
                     }
+
+            } catch (Exception c){
+                JOptionPane.showMessageDialog(null, "Please enter numbers");
+            }
 
             }
         });
